@@ -1,15 +1,10 @@
 # unblurrit
 Python tool for deblurring and enhancing photos using OpenCV. Supports multiple methods including Unsharp Masking, CLAHE, and Wiener Deconvolution for motion blur.
 
-Unblurrit 📸
-Ein Python-Tool zum Schärfen und Verbessern unscharfer Fotos mit verschiedenen professionellen Bildverarbeitungstechniken.
-Features
-
 🔍 Unsharp Masking - Professionelle Schärfungstechnik
-✨ CLAHE Detail Enhancement - Verbessert Details und Kontraste
-🎯 Wiener Deconvolution - Für Bewegungsunschärfe
-📁 Batch Processing - Verarbeite ganze Ordner auf einmal
-⚡ Schnell & Einfach - Kommandozeilen-Interface
+✨ CLAHE Detail Enhancement 
+🎯 Wiener Deconvolution
+📁 Batch Processing 
 
 # Repository
 git clone https://github.com/libertates/unblurrit.git
@@ -17,8 +12,24 @@ cd unblurrit
 
 # Virtual Environment
 python3 -m venv .venv
-source .venv/bin/activate  # macOS/Linux
-# oder: .venv\Scripts\activate  # Windows
+source .venv/bin/activate  # macOS
 
-# Dependencies
-pip install -r requirements.txt
+## Installation
+pip install opencv-python numpy
+
+## Application (bash)
+# Single Image
+python deblur.py mein_foto.jpg
+
+## Directory Folder
+python deblur.py images/
+
+## Mixed-Methods/Triangulation
+python deblur.py iamge1.jpg -m unsharp
+python deblur.py iamge1.jpg -m combined
+
+# basic - Quick sharpening
+# unsharp - Unsharp masking 
+# wiener - For motion blur
+# enhance - Detail enhancement
+# combined - Combines multiple methods
