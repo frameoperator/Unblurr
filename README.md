@@ -1,4 +1,4 @@
-# unblurritnow
+# unblurrit
 Python tool for deblurring and enhancing photos using OpenCV. Supports multiple methods including Unsharp Masking, CLAHE, and Wiener Deconvolution for motion blur.
 
 Unblurrit 📸
@@ -11,14 +11,14 @@ Features
 📁 Batch Processing - Verarbeite ganze Ordner auf einmal
 ⚡ Schnell & Einfach - Kommandozeilen-Interface
 
-# Repository klonen
+# Repository
 git clone https://github.com/libertates/unblurrit.git
 cd unblurrit
 
-# Virtual Environment erstellen (empfohlen)
+# Virtual Environment
 python3 -m venv .venv
 source .venv/bin/activate  # macOS/Linux
 # oder: .venv\Scripts\activate  # Windows
 
-# Dependencies installieren
+# Dependencies
 pip install -r requirements.txt
