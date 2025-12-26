@@ -1,0 +1,19 @@
+## Installation
+pip install opencv-python numpy
+
+## Application (bash)
+# Single Image
+python deblur.py mein_foto.jpg
+
+## Directory Folder
+python deblur.py meine_fotos/
+
+## Mixed-Methods/Triangulation
+python deblur.py foto.jpg -m unsharp
+python deblur.py foto.jpg -m combined
+
+# basic - Quick sharpening (good for slightly blurry photos)
+# unsharp - Unsharp masking (professional, natural)
+# wiener - For motion blur
+# enhance - Detail enhancement
+# combined - Combines multiple methods
