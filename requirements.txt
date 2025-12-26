@@ -1,5 +1,6 @@
 ## Installation
 pip install opencv-python numpy
+pip install CV2
 
 ## Application (bash)
 # Single Image
